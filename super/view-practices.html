@@ -1,0 +1,497 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/style.min.css">
+    </head>
+    <body class="page-dashboard">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="main-header">
+            <div class="left-column">
+                <div class=" logo-section">
+                    <a href="#"><img src="../assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#" title="Add Practices"><span class="icon icon-add-practice"></span> Add Practices</a></li>
+                        <li><a href="#" title="Add User Account"><span class="icon icon-add-user"></span> Add User Account</a></li>
+                        <li><a href="#" title="View User Account"><span class="icon icon-view"></span> View User Account</a></li>
+                        <li class="active"><a href="#" title="View Practices"><span class="icon icon-view"></span> View Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column right-header-section clearfix">
+                <h3 class="pull-left">Admin Dashboard</h3>
+                <div class="dropdown pull-right">
+                  <a href="#" data-toggle="dropdown">
+                    <img class="img-circle user-avatar" src="../assets/images/user.jpg" alt=""> 
+                    <span class="user-name">JAMES <span class="caret"></span></span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+            </div>
+        </header>
+        <div class="right-column page-content-section clearfix">
+            <a class="toggle-menu" onclick="toggleMenu()" href="javascript:void(0)" title=""><img src="../assets/images/icons/svg/menu.svg" alt="MENU"></a>
+            <div class="row">
+                <div class="col-md-8  col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <h4 class="clearfix page-heading col-md-offset-1"><img class="pull-left related-icon" src="../assets/images/icons/img/icon-date-time.png" alt=""> Today's Date: Monday, 27th of March' 2017 <br> Week: (27-03-2017 to 31-03-2017)</h4>
+                </div>                
+            </div>
+            <table class="table table-custom table-striped data-table">
+                <thead>
+                    <tr>
+                        <th width="10"></th>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Address</th>
+                        <th class="text-center">Actions</th>
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Meredith 1</td>
+                        <td>236456</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Meredith 2</td>
+                        <td>237557</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Meredith 3</td>
+                        <td>238658</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Meredith 4</td>
+                        <td>239759</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Meredith 5</td>
+                        <td>240860</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Meredith 6</td>
+                        <td>241961</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Meredith 7</td>
+                        <td>2421062</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Meredith 8</td>
+                        <td>2431163</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Meredith 9</td>
+                        <td>2441264</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Meredith 10</td>
+                        <td>2451365</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Meredith 11</td>
+                        <td>2461466</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Meredith 12</td>
+                        <td>2471567</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Meredith 13</td>
+                        <td>2481668</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Meredith 14</td>
+                        <td>2491769</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Meredith 15</td>
+                        <td>2501870</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Meredith 16</td>
+                        <td>2511971</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Meredith 17</td>
+                        <td>2522072</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Meredith 18</td>
+                        <td>2532173</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Meredith 19</td>
+                        <td>2542274</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Meredith 20</td>
+                        <td>2552375</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Meredith 21</td>
+                        <td>2562476</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Meredith 22</td>
+                        <td>2572577</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Meredith 23</td>
+                        <td>2582678</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Meredith 24</td>
+                        <td>2592779</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Meredith 25</td>
+                        <td>2602880</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Meredith 26</td>
+                        <td>2612981</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Meredith 27</td>
+                        <td>2623082</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Meredith 28</td>
+                        <td>2633183</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Meredith 29</td>
+                        <td>2643284</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Meredith 30</td>
+                        <td>2653385</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Meredith 31</td>
+                        <td>2663486</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>Meredith 32</td>
+                        <td>2673587</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>Meredith 33</td>
+                        <td>2683688</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>Meredith 34</td>
+                        <td>2693789</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>Meredith 35</td>
+                        <td>2703890</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>Meredith 36</td>
+                        <td>2713991</td>
+                        <td>example@atmedics.com</td>
+                        <td align="center" class="action-buttons">
+                            <a href="#" title=""><img src="../assets/images/icons/svg/eye.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/edit.svg" alt=""></a>
+                            <a href="#" title=""><img src="../assets/images/icons/svg/trash.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table> 
+        </div>
+
+
+        
+        <script src="../assets/js/jquery-3.1.1.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/js/dataTables.bootstrap.min.js"></script>
+        <!-- <script src="assets/js/scripts.min.js"></script> -->
+        <script type="text/javascript">function toggleMenu(){$('body').toggleClass('menu-open')}</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+        <script>
+            var table = $(".data-table").DataTable({
+                dom: 'tp'
+            });
+            $(table.table().container()).each(function(){
+                $(this).find('table').wrap('<div class="table-responsive" />');
+                console.log();
+            })
+        </script>
+    </body>
+</html>
